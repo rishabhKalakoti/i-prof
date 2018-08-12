@@ -1,0 +1,410 @@
+/***************************/
+/* RESET MARGINS & PADDING */
+/***************************/
+
+default, html, body, div, span,
+p, blockquote, pre, code,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+form, fieldset, legend, label, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+/**************/
+/* TYPOGRAPHY */
+/**************/
+
+body {
+  background: #f4e7e7;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 75%;    /* 12px */
+  font-weight: normal;
+  line-height: 160%;    /* 19.2px */
+}
+
+/**********/
+/* LAYOUT */
+/**********/
+
+html
+ {
+  background: #f4e7e7;
+  color: #666;
+}
+
+#page
+{
+	margin:0px;
+	padding:0px;
+	min-width:1300px;
+}
+
+#big_box
+{
+	position:fixed;
+	margin:0px;
+	z-index:10;
+	background-color:grey;
+	margin:0px;
+	width:100%;
+	height:100%;
+	border:2px solid white;
+	text-align:center;
+	opacity:0.8;
+	visibility:hidden;
+}
+
+img#cross_btn
+{
+	z-index:12;
+	float:right;
+	margin:20px;
+	cursor:hand;
+}
+
+#container
+{
+	width:60%;
+	position:fixed;
+	border:2px solid white;
+	margin:200px;
+	opacity:1;
+	z-index:11;
+	background-color:#f4e7e7;
+	padding:50px;
+	visibility:hidden;
+}
+
+#login_box
+{
+	opacity:1;
+	width:350px;
+	float:left;
+	color:#2f74a3;
+}
+
+#register_box
+{
+	opacity:1;
+	width:400px;
+	float:right;
+	border-left:3px solid white;
+	padding-left:20px;
+	color:#2f74a3;
+}
+
+#header
+{
+	border-top:3px solid #2f74a3;
+	width:100%;
+	height:200px;
+	background: transparent url('images/logo_bg.png') no-repeat right bottom;
+}
+
+img#logo
+{
+	margin-left:200px;
+	height:200px;
+	width:200px;
+	float:left;
+}
+
+#account
+{
+	float:right;
+	margin-right:5px;
+	width:700px;
+}
+
+#navigation
+{
+	position:absolute;
+	top:183px;
+	right:100px;
+	width:700px;
+}
+
+#blue_strip
+{
+	background-color:#2f74a3;
+	height:20px;
+	width:100%;
+	border-top:4px solid #99c931;
+	border-bottom:2px solid white;
+}
+
+#big_wrapper
+{
+	/*margin, padding syntax: top right bottom left*/
+	margin:30px 175px 30px 175px;
+}
+
+#sidebar
+{
+	float:left;
+	width:220px;
+	min-height:300px;
+}
+
+#main_content
+{
+	float:right;
+	width:700px;
+	min-height:300px;
+	margin:5px 5px 50px 0px;
+	padding:10px 10px 10px 10px;
+}
+
+/*************************/
+/* NAVIGATION COMPONENTS */
+/*************************/
+
+.nav
+{
+	background:transparent url(images/nav-block.png) no-repeat;
+	float:left;
+	min-width:80px;
+	text-align:center;
+	margin-right:5px;
+	height:20px;
+	cursor:hand;
+	color:#2f74a3;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.nav_left
+{
+	float:left;
+}
+
+.nav_right
+{
+	float:right;
+}
+
+.nav:hover
+{
+	background:transparent url(images/nav-block-active.png) no-repeat center;
+	color:white;
+}
+
+#nav_active
+{
+	background:transparent url(images/nav-block-active.png) no-repeat center;
+	color:white;
+}
+
+/**********************/
+/* ACCOUNT COMPONENTS */
+/**********************/
+
+.account_menu
+{
+	background-color:#2f74a3;
+	color:white;
+	font-size:12px;
+	float:right;
+	min-width:80px;
+	text-align:center;
+	margin-left:5px;
+	padding-bottom:2px;
+	height:20px;
+	cursor:hand;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.account_menu_active
+{
+	background-color:white;
+	color:#2f74a3;
+}
+
+/**********************/
+/* SIDEBAR COMPONENTS */
+/**********************/
+
+#sidebar-top
+{
+	background: transparent url(images/sidebar-top.png);
+	padding:15px;
+	text-align:right;
+}
+
+.sidebar-top-heading
+{
+	color:white;
+	font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+	font-weight: 600;
+	margin: 0;
+	text-transform: uppercase;
+	text-shadow: #545454 1px 1px;
+}
+
+.sidebar-top-heading:hover
+{
+	cursor:hand;
+	text-decoration:underline;
+}
+
+#sidebar-main
+{
+	background: transparent url(images/sidebar-main.png) repeat-y;
+	padding:10px;
+}
+
+#sidebar-bottom
+{
+	background: transparent url(images/sidebar-bottom.png) ;
+	height:20px;
+}
+
+/*************/
+/*  BUTTONS  */
+/*************/
+
+.simple_button
+{
+	background-color:#2f74a3;
+	border:0px;
+	padding:5px 10px 5px 10px;
+	color:white;
+	text-transform:uppercase;
+}
+
+/**************/
+/*  HEADINGS  */
+/**************/
+
+.heading1
+{
+	background-color:#2f74a3;
+	color:white;
+	padding:10px;
+	margin-bottom:10px;
+	text-transform:uppercase;
+	text-align:center;
+	border:1px solid white;
+}
+
+.heading2
+{
+	border-bottom: 1px solid #D6DDB9;
+	clear: left;    /* LTR */
+	font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+	font-size: 1.833em;
+	font-weight: 600;
+	line-height: 1.2727em;
+	margin:5px;
+}
+
+.heading3
+{
+	font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+	margin-left:10px;
+	padding-left:10px;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	font-weight: 600;
+	background: url(images/raquo.png) no-repeat left;
+}
+
+.heading4
+{
+	border:1px solid white;
+	font-size:20px;
+	color:white;
+	padding:20px;
+	background-color:#2f74a3;
+	text-align:center;
+}
+
+/***************/
+/*  QUESTIONS  */
+/***************/
+
+.question_title
+{
+	font-family:Lucida Grande, Geneva, Trebuchet MS, sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+	line-height: 1em;
+	margin:5px;
+	padding-left:40px;
+}
+
+.question_content
+{
+	font-size:15px;
+}
+
+.question_user
+{
+	margin-left:500px;
+	/*color:#2f74a3;*/
+	/*background: url(images/raquo.png) no-repeat left;*/
+	padding-left:20px;
+	font-size:15px;
+	font-family:segoe script bold;
+}
+
+/**********/
+/*  LIST  */
+/**********/
+
+a.list1
+{
+	background: url(images/green-bullet.png) no-repeat;
+	padding-left:20px;
+	text-decoration:none;
+	color: #2f74a3;
+}
+
+a.list1:hover
+{
+	text-decoration:underline;
+}
+
+a#list1_active
+{
+	color: #99c931;
+	font-weight:bold;
+	padding-left:25px;
+}
+
+a.list2
+{
+	background: url(images/raquo.png) no-repeat left;
+	margin-left:10px;
+	padding-left:10px;
+	text-decoration:none;
+	margin-bottom:10px;
+	color: #2f74a3;
+}
+
+a.list2:hover
+{
+	/*color: #99c931;*/
+	text-decoration:underline;
+}
+
+/**********/
+/*  MISC  */
+/**********/
+
+.textbox
+{
+	color:#666;
+	padding:2px;
+	width:200px;
+}
